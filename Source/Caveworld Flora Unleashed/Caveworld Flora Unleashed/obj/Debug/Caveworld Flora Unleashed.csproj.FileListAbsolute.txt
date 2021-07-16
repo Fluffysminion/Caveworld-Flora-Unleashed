@@ -1,0 +1,4 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Caveworld Flora Unleashed\Assemblies\Caveworld_Flora_Unleashed.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Caveworld Flora Unleashed\Source\Caveworld Flora Unleashed\Caveworld Flora Unleashed\obj\Debug\Caveworld Flora Unleashed.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Caveworld Flora Unleashed\Source\Caveworld Flora Unleashed\Caveworld Flora Unleashed\obj\Debug\Caveworld_Flora_Unleashed.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Caveworld Flora Unleashed\Source\Caveworld Flora Unleashed\Caveworld Flora Unleashed\obj\Debug\Caveworld Flora Unleashed.csproj.AssemblyReference.cache
