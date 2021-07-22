@@ -6,6 +6,7 @@ namespace Caveworld_Flora_Unleashed
 {
     public class ThingDef_FruitingBody : ThingDef
 	{
+		public bool growsOnlyInCaveBiome = false;
 
 		public int minGrowTemperature = 0;
 
