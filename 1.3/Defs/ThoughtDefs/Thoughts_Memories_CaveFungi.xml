@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThoughtDef>
-    <defName>ItW_AteRawShimmershroom</defName>
+    <defName>BMT_AteRawShimmershroom</defName>
     <durationDays>1</durationDays>
     <stackLimit>1</stackLimit>
     <stages>
@@ -12,8 +12,9 @@
       </li>
     </stages>
   </ThoughtDef>
+  
     <ThoughtDef>
-    <defName>ItW_UndergrounderMushroomed</defName>
+    <defName>BMT_UndergrounderMushroomed</defName>
     <durationDays>1</durationDays>
     <stackLimit>1</stackLimit>
     <requiredTraits>
@@ -28,9 +29,9 @@
     </stages>
   </ThoughtDef>
     <ThoughtDef>
-    <defName>ItW_BreathedGleamcapSmoke</defName>
+    <defName>BMT_BreathedGleamcapSmoke</defName>
     <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>ItW_HediffGleamcapSmoke</hediff>
+    <hediff>BMT_HediffGleamcapSmoke</hediff>
     <stages>
       <li>
         <label>breathed gleamcap smoke</label>

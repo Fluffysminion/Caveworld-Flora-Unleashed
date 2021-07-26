@@ -5,7 +5,7 @@ using Verse.AI;
 
 	public class WorkGiver_TakeMushroomWineOutOfFermentingBarrel : WorkGiver_Scanner
 	{
-		public override ThingRequest PotentialWorkThingRequest => ThingRequest.ForDef(ThingDef.Named("ItW_MushroomFermentingBarrel"));
+		public override ThingRequest PotentialWorkThingRequest => ThingRequest.ForDef(ThingDef.Named("BMT_MushroomFermentingBarrel"));
 
 		public override PathEndMode PathEndMode => PathEndMode.Touch;
 
@@ -33,7 +33,7 @@ using Verse.AI;
 
 		public override Job JobOnThing(Pawn pawn, Thing t, bool forced = false)
 		{
-			return new Job(DefDatabase<JobDef>.GetNamed("ItW_TakeMushroomWineOutOfFermentingBarrelJob"), t);
+			return new Job(DefDatabase<JobDef>.GetNamed("BMT_TakeMushroomWineOutOfFermentingBarrelJob"), t);
 		}
 	}
 

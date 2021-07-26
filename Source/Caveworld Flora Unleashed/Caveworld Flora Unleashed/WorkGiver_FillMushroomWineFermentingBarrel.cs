@@ -10,7 +10,7 @@ using Verse.AI;
 
 		private static string NoWortTrans;
 
-		public override ThingRequest PotentialWorkThingRequest => ThingRequest.ForDef(ThingDef.Named("ItW_MushroomFermentingBarrel"));
+		public override ThingRequest PotentialWorkThingRequest => ThingRequest.ForDef(ThingDef.Named("BMT_MushroomFermentingBarrel"));
 
 		public override PathEndMode PathEndMode => PathEndMode.Touch;
 
@@ -58,7 +58,7 @@ using Verse.AI;
 		{
 			Building_MushroomFermentingBarrel barrel = (Building_MushroomFermentingBarrel)t;
 			Thing t2 = FindWort(pawn, barrel);
-			return new Job(DefDatabase<JobDef>.GetNamed("ItW_FillMushroomFermentingBarrelJob"), t, t2);
+			return new Job(DefDatabase<JobDef>.GetNamed("BMT_FillMushroomFermentingBarrelJob"), t, t2);
 		}
 
 		private Thing FindWort(Pawn pawn, Building_MushroomFermentingBarrel barrel)
@@ -66,7 +66,7 @@ using Verse.AI;
 			Predicate<Thing> predicate = (Thing x) => !x.IsForbidden(pawn) && pawn.CanReserve(x);
 			IntVec3 position = pawn.Position;
 			Map map = pawn.Map;
-			ThingRequest thingReq = ThingRequest.ForDef(ThingDef.Named("ItW_MushroomMust"));
+			ThingRequest thingReq = ThingRequest.ForDef(ThingDef.Named("BMT_MushroomMust"));
 			PathEndMode peMode = PathEndMode.ClosestTouch;
 			TraverseParms traverseParams = TraverseParms.For(pawn);
 			Predicate<Thing> validator = predicate;

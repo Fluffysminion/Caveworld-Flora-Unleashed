@@ -2,7 +2,7 @@
 <Defs>
 
     <WorkGiverDef>
-        <defName>ItW_TakeMushroomWineOutOfFermentingBarrel</defName>
+        <defName>BMT_TakeMushroomWineOutOfFermentingBarrel</defName>
         <label>take mushroom wine out of mushroom wine barrels</label>
         <giverClass>WorkGiver_TakeMushroomWineOutOfFermentingBarrel</giverClass>
         <workType>Hauling</workType>
@@ -15,7 +15,7 @@
     </WorkGiverDef>
 
     <WorkGiverDef>
-        <defName>ItW_FillMushroomFermentingBarrel</defName>
+        <defName>BMT_FillMushroomFermentingBarrel</defName>
         <label>fill mushroom fermenting barrels</label>
         <giverClass>WorkGiver_FillMushroomFermentingBarrel</giverClass>
         <workType>Hauling</workType>

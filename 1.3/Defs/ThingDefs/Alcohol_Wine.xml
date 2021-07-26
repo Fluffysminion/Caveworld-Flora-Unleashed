@@ -5,11 +5,11 @@
 	<!-- ========== MUSHROOM WINE ========== -->
 <!-- Mushroom wine is expensive, but only caveworlders fully enjoy it -->
     <ThingDef ParentName="DrugBase">
-        <defName>ItW_MushroomWine</defName>
+        <defName>BMT_MushroomWine</defName>
         <label>mushroom wine</label>
         <description>Fungi fermented into an alcoholic beverage not entirely unlike wine. It's an aquired taste, tangy with a hint of agar.</description>
         <graphicData>
-            <texPath>Things/Item/Drug/ItW_MushroomWine</texPath>
+            <texPath>Things/Item/Drug/BMT_MushroomWine</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <equippedAngleOffset>-150</equippedAngleOffset>
@@ -49,7 +49,7 @@
                     <divideByBodySize>true</divideByBodySize>
                 </li>
             </outcomeDoers>
-			<specialThoughtDirect>ItW_UndergrounderMushroomed</specialThoughtDirect>
+			<specialThoughtDirect>BMT_UndergrounderMushroomed</specialThoughtDirect>
         </ingestible>
         <equipmentType>Primary</equipmentType>
         <techLevel>Medieval</techLevel>
@@ -91,7 +91,7 @@
 
 	<!-- ========== The Production Process ========== -->
     <RecipeDef>
-        <defName>ItW_MakeMushroomMust</defName>
+        <defName>BMT_MakeMushroomMust</defName>
         <label>make mushroom must</label>
         <description>Make must from mushrooms.</description>
         <jobString>Making mushroom must.</jobString>
@@ -109,7 +109,7 @@
             <li>
                 <filter>
                     <thingDefs>
-                        <li>ItW_RawGreyfields</li>
+                        <li>BMT_RawGreyfields</li>
                     </thingDefs>
                 </filter>
                 <count>25</count>
@@ -117,20 +117,20 @@
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
-                <li>ItW_RawGreyfields</li>
+                <li>BMT_RawGreyfields</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <ItW_MushroomMust>5</ItW_MushroomMust>
+            <BMT_MushroomMust>5</BMT_MushroomMust>
         </products>
     </RecipeDef>
 
     <ThingDef ParentName="ResourceBase">
-        <defName>ItW_MushroomMust</defName>
+        <defName>BMT_MushroomMust</defName>
         <label>mushroom must</label>
         <description>Un-fermented mushroom wine. This substance needs to ferment in a mushroom fermenting barrel before it becomes drinkable.</description>
         <graphicData>
-            <texPath>Things/Item/Resource/ItW_MushroomMust</texPath>
+            <texPath>Things/Item/Resource/BMT_MushroomMust</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <rotatable>false</rotatable>

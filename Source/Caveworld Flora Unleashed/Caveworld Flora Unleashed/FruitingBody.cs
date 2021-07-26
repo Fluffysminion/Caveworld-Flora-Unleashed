@@ -176,7 +176,7 @@ namespace Caveworld_Flora_Unleashed
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_References.Look(ref Mycelium, "ItW_Mycelium");
+            Scribe_References.Look(ref Mycelium, "BMT_Mycelium");
         }
 
         public override void TickLong()

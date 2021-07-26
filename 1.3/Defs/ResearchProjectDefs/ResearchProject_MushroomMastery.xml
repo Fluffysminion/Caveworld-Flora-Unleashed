@@ -4,8 +4,8 @@
 
 	<!--=============== Cultivating Fungi ==============-->
 	<ResearchProjectDef>
-		<defName>ItW_ResearchFungiponics</defName>
-		<label>advanced mushrooms</label>
+		<defName>BMT_ResearchMushrooms</defName>
+		<label>mushroom mastery</label>
 		<description>Research how to grow delicate cave fungi, and how to use their products.</description>
 		<techLevel>Neolithic</techLevel>
 		<baseCost>1200</baseCost>

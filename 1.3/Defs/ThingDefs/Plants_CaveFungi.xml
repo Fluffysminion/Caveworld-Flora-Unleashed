@@ -4,7 +4,7 @@
 
 	<!-- ========== BASES ========== -->
 	
-	<ThingDef Name="ItW_CaveWorldMushroomBase" Class="Caveworld_Flora_Unleashed.ThingDef_FruitingBody" Abstract="True" ParentName="CavePlantBase">
+	<ThingDef Name="BMT_CaveWorldMushroomBase" Class="Caveworld_Flora_Unleashed.ThingDef_FruitingBody" Abstract="True" ParentName="CavePlantBase">
 		<statBases>
 			<Flammability>0.8</Flammability>
 		</statBases>
@@ -27,8 +27,8 @@
 	
 					<!-- SHIMMERSHROOM -->
 	<!-- A rare wild mushroom that can be harvested for a foodstuff that is better to eat raw -->
-	<ThingDef ParentName="ItW_CaveWorldMushroomBase" Class="Caveworld_Flora_Unleashed.ThingDef_FruitingBody">
-		<defName>ItW_Shimmershroom</defName>
+	<ThingDef ParentName="BMT_CaveWorldMushroomBase" Class="Caveworld_Flora_Unleashed.ThingDef_FruitingBody">
+		<defName>BMT_Shimmershroom</defName>
 		<label>shimmershroom</label>
 		<description>Some soft and delicate caveworld shimmershrooms. Much appreciated for their subtle taste they are considered a delicacy by caveworlds inhabitants.</description>
 		<thingClass>Caveworld_Flora_Unleashed.FruitingBody</thingClass>
@@ -39,7 +39,7 @@
 			<Nutrition>0.15</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/ItW_Shimmershroom</texPath>
+			<texPath>Things/Plant/BMT_Shimmershroom</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<shadowData>
 				<volume>(0.3, 0.3, 0.2)</volume>
@@ -57,7 +57,7 @@
 			<harvestMinGrowth>0.90</harvestMinGrowth>
 			<harvestWork>50</harvestWork>
 			<harvestTag>Standard</harvestTag>
-			<harvestedThingDef>ItW_RawShimmershroom</harvestedThingDef>
+			<harvestedThingDef>BMT_RawShimmershroom</harvestedThingDef>
 			<harvestYield>5</harvestYield>
 			<visualSizeRange>0.6~0.8</visualSizeRange>
 			<growDays>5</growDays>
@@ -65,7 +65,7 @@
 				<li>Ground</li>
 			</sowTags>
 			<sowResearchPrerequisites>
-				<li>ItW_ResearchFungiponics</li>
+				<li>BMT_ResearchMushrooms</li>
 			</sowResearchPrerequisites>
 			<sowMinSkill>7</sowMinSkill>	  
 			<wildOrder>0</wildOrder>
@@ -98,8 +98,8 @@
   
 					<!-- GLOWBULB -->
 	<!-- Grows tougher fruiting bodies than most cave fungi -->
-	<ThingDef ParentName="ItW_CaveWorldMushroomBase" Class="Caveworld_Flora_Unleashed.ThingDef_FruitingBody">
-		<defName>ItW_Glowbulb</defName>
+	<ThingDef ParentName="BMT_CaveWorldMushroomBase" Class="Caveworld_Flora_Unleashed.ThingDef_FruitingBody">
+		<defName>BMT_Glowbulb</defName>
 		<label>glowbulb</label>
 		<description>A small glowing bulb, found growing in nearly every corner of dark caves. While technically edible, its very rough taste make it better used as a cooked ingredient.</description>
 		<thingClass>Caveworld_Flora_Unleashed.FruitingBody</thingClass>
@@ -110,7 +110,7 @@
 			<Nutrition>0.20</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/ItW_Glowbulb</texPath>
+			<texPath>Things/Plant/BMT_Glowbulb</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<shadowData>
 				<volume>(0.3, 0.4, 0.3)</volume>
@@ -128,7 +128,7 @@
 			<harvestMinGrowth>0.90</harvestMinGrowth>
 			<harvestWork>50</harvestWork>
 			<harvestTag>Standard</harvestTag>
-			<harvestedThingDef>ItW_RawGlowbulb</harvestedThingDef>
+			<harvestedThingDef>BMT_RawGlowbulb</harvestedThingDef>
 			<harvestYield>10</harvestYield>
 			<visualSizeRange>0.6~0.8</visualSizeRange>
 			<growDays>7</growDays>
@@ -136,7 +136,7 @@
 				<li>Ground</li>				
 			</sowTags>
 			<sowResearchPrerequisites>
-				<li>ItW_ResearchFungiponics</li>
+				<li>BMT_ResearchMushrooms</li>
 			</sowResearchPrerequisites>	  
 			<wildOrder>0</wildOrder>
 		</plant>
@@ -167,8 +167,8 @@
 	</ThingDef>
   					<!-- GREYFIELDS -->
 		<!-- Prefers cooler climates, can be used to make mushroom wine -->
-	<ThingDef ParentName="ItW_CaveWorldMushroomBase" Class="Caveworld_Flora_Unleashed.ThingDef_FruitingBody">
-		<defName>ItW_Greyfields</defName>
+	<ThingDef ParentName="BMT_CaveWorldMushroomBase" Class="Caveworld_Flora_Unleashed.ThingDef_FruitingBody">
+		<defName>BMT_Greyfields</defName>
 		<label>greyfields</label>
 		<description>A fairly unremarkable mushroom in appearance, taste, and texture; what is notable about them is that it is possible to brew them into mushroom wine.</description>
 		<thingClass>Caveworld_Flora_Unleashed.FruitingBody</thingClass>
@@ -179,7 +179,7 @@
 			<Nutrition>0.20</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/ItW_Greyfields</texPath>
+			<texPath>Things/Plant/BMT_Greyfields</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<shadowData>
 				<volume>(0.3, 0.4, 0.3)</volume>
@@ -198,7 +198,7 @@
 			<growOptimalGlow>0</growOptimalGlow>
 			<harvestWork>50</harvestWork>
 			<harvestTag>Standard</harvestTag>
-			<harvestedThingDef>ItW_RawGreyfields</harvestedThingDef>
+			<harvestedThingDef>BMT_RawGreyfields</harvestedThingDef>
 			<harvestYield>8</harvestYield>		
 			<visualSizeRange>0.6~0.8</visualSizeRange>
 			<growDays>7</growDays>
@@ -207,7 +207,7 @@
 				<li>Ground</li>				
 			</sowTags>
 			<sowResearchPrerequisites>
-				<li>ItW_ResearchFungiponics</li>
+				<li>BMT_ResearchMushrooms</li>
 			</sowResearchPrerequisites>			
 		</plant>
 		<comps>
@@ -238,8 +238,8 @@
  
   					<!-- ROYAL BRACKET -->
 		<!-- Prefers warm climates, grows slower but has higher yield than most caveworld fungi -->
-	<ThingDef ParentName="ItW_CaveWorldMushroomBase" Class="Caveworld_Flora_Unleashed.ThingDef_FruitingBody">
-		<defName>ItW_RoyalBracket</defName>
+	<ThingDef ParentName="BMT_CaveWorldMushroomBase" Class="Caveworld_Flora_Unleashed.ThingDef_FruitingBody">
+		<defName>BMT_RoyalBracket</defName>
 		<label>royal bracket</label>
 		<description>A braket fungus related to the oyster mushroom of old Terra that glows with a luxurious golden glow.</description>
 		<thingClass>Caveworld_Flora_Unleashed.FruitingBody</thingClass>
@@ -250,7 +250,7 @@
 			<Nutrition>0.30</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/ItW_RoyalBracket</texPath>
+			<texPath>Things/Plant/BMT_RoyalBracket</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<shadowData>
 				<volume>(0.3, 0.4, 0.3)</volume>
@@ -277,7 +277,7 @@
 				<li>Ground</li>				
 			</sowTags>
 			<sowResearchPrerequisites>
-				<li>ItW_ResearchFungiponics</li>
+				<li>BMT_ResearchMushrooms</li>
 			</sowResearchPrerequisites>			
 		</plant>
 		<comps>
@@ -310,8 +310,8 @@
 
 					<!-- GLEAMCAP -->
 	<!-- Caveworld herbal medicine -->
-	<ThingDef ParentName="ItW_CaveWorldMushroomBase" Class="Caveworld_Flora_Unleashed.ThingDef_FruitingBody">
-		<defName>ItW_Gleamcap</defName>
+	<ThingDef ParentName="BMT_CaveWorldMushroomBase" Class="Caveworld_Flora_Unleashed.ThingDef_FruitingBody">
+		<defName>BMT_Gleamcap</defName>
 		<label>gleamcap</label>
 		<description>A massive caveworld mushroom, known for its natural healing properties by caveworld tenders. Gleamcap spores are psycoactive and are released whenever the mushroom is disturbed.</description>
 		<thingClass>Caveworld_Flora_Unleashed.FruitingBody_Gleamcap</thingClass>
@@ -323,7 +323,7 @@
 			<Nutrition>0.40</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/ItW_Gleamcap</texPath>
+			<texPath>Things/Plant/BMT_Gleamcap</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<shadowData>
 				<volume>(0.5, 0.5, 0.4)</volume>
@@ -349,7 +349,7 @@
 				<li>Ground</li>				
 			</sowTags>
 			<sowResearchPrerequisites>
-				<li>ItW_ResearchFungiponics</li>
+				<li>BMT_ResearchMushrooms</li>
 			</sowResearchPrerequisites>
 			<sowMinSkill>8</sowMinSkill>	  
 			<wildOrder>0</wildOrder>
@@ -382,8 +382,8 @@
   
 					<!-- BRIGHTBELLS -->
 	<!-- Beautiful, can make mining much more tolerable -->
-	<ThingDef ParentName="ItW_CaveWorldMushroomBase" Class="Caveworld_Flora_Unleashed.ThingDef_FruitingBody">
-		<defName>ItW_Brightbells</defName>
+	<ThingDef ParentName="BMT_CaveWorldMushroomBase" Class="Caveworld_Flora_Unleashed.ThingDef_FruitingBody">
+		<defName>BMT_Brightbells</defName>
 		<label>brightbells</label>
 		<description>A very elegant fungus, appreciated by miners for the light emitted by the little bulbs ending its fragile branches. It is often used by caveworld people as a natural lightning; its fibrous texture renders it inedible though.</description>
 		<thingClass>Caveworld_Flora_Unleashed.FruitingBody</thingClass>
@@ -394,7 +394,7 @@
 			<Nutrition>0.10</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/ItW_Brightbells</texPath>
+			<texPath>Things/Plant/BMT_Brightbells</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<shadowData>
 				<volume>(0.3, 0.3, 0.3)</volume>
@@ -419,7 +419,7 @@
 				<li>Ground</li>				
 			</sowTags>
 			<sowResearchPrerequisites>
-				<li>ItW_ResearchFungiponics</li>
+				<li>BMT_ResearchMushrooms</li>
 			</sowResearchPrerequisites>	  
 			<wildOrder>0</wildOrder>
 		</plant>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef>
-    <defName>ItW_Mycelium</defName>
+    <defName>BMT_Mycelium</defName>
     <label>mycelium</label>
     <description>An extensive mesh of fungal hyphae. Unlike roots which are only one part of a plant, the mycelium is the main body of the fungus, the mushrooms people are familiar with are just the reproductive structures. This network is usually hidden underground but in caves with little soil it has adapted to creep over the surface of the rock.</description>
     <thingClass>Caveworld_Flora_Unleashed.Mycelium</thingClass>
@@ -19,7 +19,7 @@
     <drawerType>MapMeshOnly</drawerType>
     <pathCost>10</pathCost>
     <graphicData>
-      <texPath>Things/Plant/ItW_Mycelium</texPath>
+      <texPath>Things/Plant/BMT_Mycelium</texPath>
       <graphicClass>Graphic_Random</graphicClass>
 	  <shaderType>CutoutPlant</shaderType>
 	  <drawOffset>(0,-2,-2)</drawOffset>
@@ -29,6 +29,9 @@
     <plant>
       <soundHarvesting>Harvest_Standard</soundHarvesting>
       <soundHarvestFinish>Harvest_Standard_Finish</soundHarvestFinish>
+   	  <harvestTag>Standard</harvestTag>
+	  <harvestedThingDef>BMT_MycelialBlocks</harvestedThingDef>
+	  <harvestYield>5</harvestYield>	  
       <sowWork>3000</sowWork>
       <harvestWork>30</harvestWork>
       <topWindExposure>0.0</topWindExposure>

@@ -6,7 +6,7 @@
 	<ThingDef ParentName="MoteBase">
 		<defName>Mote_GleamcapSmoke</defName>
 		<graphicData>
-			<texPath>Things/Mote/ItW_Spores</texPath>
+			<texPath>Things/Mote/BMT_Spores</texPath>
 		</graphicData>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
 		<mote>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TerrainDef ParentName="FloorBase">
+    <defName>BMT_RichFungalGravel</defName>
+    <label>rich fungal gravel</label>
+    <description>A visually attractive substrate for growing fungal crops underground. It must be placed under overhead mountain so the dank coolness of the depths can nourish the fungal spores.</description>
+    <texturePath>Terrain/Surfaces/BMT_RichFungalGravel</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>320</renderPrecedence>
+    <pathCost>2</pathCost>
+    <fertility>0.7</fertility>
+    <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <placeWorkers>
+      <li>Placeworker_OnlyUnderThickRoof</li>
+    </placeWorkers>
+    <statBases>
+      <Beauty>1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+      <WorkToBuild>1000</WorkToBuild>
+    </statBases>
+    <costList>
+      <BMT_MycelialBlocks>1</BMT_MycelialBlocks>
+    </costList>	
+  </TerrainDef>
+
+</Defs>

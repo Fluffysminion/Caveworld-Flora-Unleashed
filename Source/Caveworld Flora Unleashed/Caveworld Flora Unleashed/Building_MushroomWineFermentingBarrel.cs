@@ -171,11 +171,11 @@ using Verse;
 			{
 				if (Fermented)
 				{
-					stringBuilder.AppendLine("ItW_ContainsMushroomWine".Translate(wortCount, 25));
+					stringBuilder.AppendLine("BMT_ContainsMushroomWine".Translate(wortCount, 25));
 				}
 				else
 				{
-					stringBuilder.AppendLine("ItW_ContainsMushroomMust".Translate(wortCount, 25));
+					stringBuilder.AppendLine("BMT_ContainsMushroomMust".Translate(wortCount, 25));
 				}
 			}
 			if (!Empty)
@@ -205,7 +205,7 @@ using Verse;
 				Log.Warning("Tried to get mushroom wine but it's not yet fermented.");
 				return null;
 			}
-			Thing thing = ThingMaker.MakeThing(ThingDef.Named("ItW_MushroomWine"));
+			Thing thing = ThingMaker.MakeThing(ThingDef.Named("BMT_MushroomWine"));
 			CompIngredients @object = thing.TryGetComp<CompIngredients>();
 			if (!ingredients.NullOrEmpty())
 			{
