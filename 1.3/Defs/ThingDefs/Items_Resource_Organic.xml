@@ -8,7 +8,7 @@
 		<!-- A rare food that tastes better raw than cooked -->
 	<ThingDef ParentName="PlantFoodRawBase">
 		<defName>BMT_RawShimmershroom</defName>
-		<label>shimmershroom</label>
+		<label>fresh shimmershroom</label>
 		<description>Raw shimmershroom. Its delicate taste and nutritional qualities are much appreciated by caveworlds inhabitants.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/PlantFoodRaw/BMT_RawShimmershroom</texPath>
@@ -42,7 +42,7 @@
 		<!-- Low nutritional value but takes a long time to spoil -->
 	<ThingDef ParentName="PlantFoodRawBase">
     <defName>BMT_RawGlowbulb</defName>
-		<label>glowbulb</label>
+		<label>raw glowbulb</label>
 		<description>Raw glowbulb. While its tough rubbery flesh makes it heavy and unappealing to eat raw, it also makes it slow to rot.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/PlantFoodRaw/BMT_RawGlowbulb</texPath>
@@ -72,7 +72,7 @@
 		<!-- Mushroom that can be made into wine -->
     <ThingDef ParentName="PlantFoodRawBase">
 		<defName>BMT_RawGreyfields</defName>
-		<label>greyfield mushroom</label>
+		<label>raw greyfields</label>
 		<description>Raw greyfield mushrooms, ready to be cooked into food or processed into mushroom wine.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/PlantFoodRaw/BMT_RawGreyfields</texPath>
@@ -104,7 +104,7 @@
     <defName>BMT_MycelialBlocks</defName>
     <label>mycelial blocks</label>
     <description>Blocks of compacted mycelium, the fibrous root-like part of fungi. Decent animal feed that won't decay, but inedible for humans.</description>
-	<stackLimit>200</stackLimit>
+	<stackLimit>50</stackLimit>
     <graphicData>
       <texPath>Things/Item/Resource/BMT_MycelialBlocks</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>

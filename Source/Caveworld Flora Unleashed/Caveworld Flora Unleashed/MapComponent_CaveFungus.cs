@@ -44,7 +44,7 @@ namespace Caveworld_Flora_Unleashed
 			if (randomSpawnPeriodInTicks == 0)
 			{
 				int mapSurfaceCoefficient = map.Size.x * 2 + map.Size.z * 2;
-				randomSpawnPeriodInTicks = 1600000 / (mapSurfaceCoefficient / 100);
+				randomSpawnPeriodInTicks = 160000 / (mapSurfaceCoefficient / 100);
 			}
 			if (Find.TickManager.TicksGame > nextRandomSpawnTick)
 			{

@@ -143,7 +143,7 @@
 		<comps>
 			<li Class="CompProperties_Glower">
 				<glowRadius>4</glowRadius>
-				<glowColor>(0,128,85,0)</glowColor>
+				<glowColor>(30,221,166,0)</glowColor>
 			</li>
 		</comps>
 		<minGrowTemperature>0</minGrowTemperature>
@@ -213,7 +213,7 @@
 		<comps>
 			<li Class="CompProperties_Glower">
 				<glowRadius>4</glowRadius>
-				<glowColor>(178,34,34,0)</glowColor>
+				<glowColor>(169,48,32,0)</glowColor>
 			</li>
 		</comps>
 		<minGrowTemperature>0</minGrowTemperature>
@@ -357,7 +357,7 @@
 		<comps>
 			<li Class="CompProperties_Glower">
 				<glowRadius>2.5</glowRadius>
-				<glowColor>(28,128,71,0)</glowColor>
+				<glowColor>(71,207,198,0)</glowColor>
 			</li>
 		</comps>
 		<minGrowTemperature>-5</minGrowTemperature>
@@ -426,7 +426,7 @@
 		<comps>
 			<li Class="CompProperties_Glower">
 				<glowRadius>4</glowRadius>
-				<glowColor>(185,185,185,0)</glowColor>
+				<glowColor>(238,211,148,0)</glowColor>
 			</li>
 		</comps>
 		<minGrowTemperature>0</minGrowTemperature>
