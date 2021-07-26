@@ -10,7 +10,6 @@
     <renderPrecedence>320</renderPrecedence>
     <pathCost>2</pathCost>
     <fertility>0.7</fertility>
-    <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
     <placeWorkers>
       <li>Placeworker_OnlyUnderThickRoof</li>
     </placeWorkers>
@@ -22,6 +21,10 @@
     <costList>
       <BMT_MycelialBlocks>1</BMT_MycelialBlocks>
     </costList>	
+    <designationHotKey>Misc6</designationHotKey>
+    <researchPrerequisites>
+      <li>BMT_ResearchMushrooms</li>
+    </researchPrerequisites>	
   </TerrainDef>
 
 </Defs>

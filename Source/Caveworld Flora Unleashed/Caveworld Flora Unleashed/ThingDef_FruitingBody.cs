@@ -1,42 +1,40 @@
 ﻿using Verse;
-using System.Collections.Generic;
-using RimWorld;
 
 namespace Caveworld_Flora_Unleashed
 {
     public class ThingDef_FruitingBody : ThingDef
-	{
-		public bool growsOnlyInCaveBiome = false;
+    {
+        public bool growsOnlyInCaveBiome = false;
 
-		public int minGrowTemperature = 0;
+        public int minGrowTemperature = 0;
 
-		public int minOptimalGrowTemperature = 10;
+        public int minOptimalGrowTemperature = 10;
 
-		public int maxOptimalGrowTemperature = 40;
+        public int maxOptimalGrowTemperature = 40;
 
         public int maxGrowTemperature = 50;
 
-		public bool growOnlyOnRoughRock = false;
+        public bool growOnlyOnRoughRock = false;
 
-		public bool growOnlyUndeRoof = false;
+        public bool growOnlyUndeRoof = false;
 
-		public bool growOnlyNearNaturalRock = false;
+        public bool growOnlyNearNaturalRock = false;
 
-		public float minFertility = 0f;
+        public float minFertility = 0f;
 
-		public float maxFertility = 999f;
+        public float maxFertility = 999f;
 
-		public float minLight = 0f;
+        public float minLight = 0f;
 
-		public float maxLight = 1f;
+        public float maxLight = 1f;
 
-		public IntRange MyceliumSizeRange;
+        public IntRange MyceliumSizeRange;
 
-		public float MyceliumSpawnRadius = 1f;
+        public float MyceliumSpawnRadius = 1f;
 
-		public float MyceliumExclusivityRadiusOffset = 1f;
+        public float MyceliumExclusivityRadiusOffset = 1f;
 
         public float MyceliumExclusivityRadiusFactor = 0f;
 
-	}
+    }
 }
