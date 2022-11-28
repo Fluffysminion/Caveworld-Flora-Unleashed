@@ -31,9 +31,14 @@
 											<Mass>0.03</Mass>
 										</statBases>
 										<ingestible>
-											<foodType>VegetableOrFruit</foodType>
+											<foodType>Fungus</foodType>
 											<specialThoughtDirect>AteRawFood</specialThoughtDirect>
 										</ingestible>
+										<ingredient>
+										  <mergeCompatibilityTags>
+											<li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
+										  </mergeCompatibilityTags>
+										</ingredient>
 										<comps>
 											<li Class="CompProperties_Rottable">
 												<daysToRotStart>10</daysToRotStart>

@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Building_MushroomWineFermentingBarrel.cs" />
+    <Compile Include="Building_FungiponicsBasin.cs" />
     <Compile Include="FruitingBody_Gleamcap.cs" />
     <Compile Include="MapComponent_CaveFungus.cs" />
     <Compile Include="Util_Caveworld_Flora_Unleashed.cs" />

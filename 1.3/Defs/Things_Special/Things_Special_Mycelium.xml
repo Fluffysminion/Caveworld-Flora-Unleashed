@@ -14,7 +14,6 @@
       <Flammability>0.8</Flammability>
     </statBases>
     <tickerType>Long</tickerType>
-    <selectable>true</selectable>
     <neverMultiSelect>True</neverMultiSelect>
     <drawerType>MapMeshOnly</drawerType>
     <pathCost>10</pathCost>
@@ -29,8 +28,8 @@
     <plant>
       <soundHarvesting>Harvest_Standard</soundHarvesting>
       <soundHarvestFinish>Harvest_Standard_Finish</soundHarvestFinish>
-   	  <harvestTag>Standard</harvestTag>
 	  <harvestedThingDef>BMT_MycelialBlocks</harvestedThingDef>
+   	  <harvestTag>Standard</harvestTag>
 	  <harvestYield>5</harvestYield>	  
       <sowWork>3000</sowWork>
       <harvestWork>30</harvestWork>

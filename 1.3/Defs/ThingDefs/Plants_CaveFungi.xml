@@ -8,6 +8,7 @@
 		<statBases>
 			<Flammability>0.8</Flammability>
 		</statBases>
+		<neverMultiSelect>false</neverMultiSelect>
 		<plant>
 			<cavePlantWeight>0</cavePlantWeight>		
 			<harvestAfterGrowth>0.10</harvestAfterGrowth>
@@ -60,15 +61,18 @@
 			<harvestedThingDef>BMT_RawShimmershroom</harvestedThingDef>
 			<harvestYield>5</harvestYield>
 			<visualSizeRange>0.6~0.8</visualSizeRange>
-			<growDays>5</growDays>
+			<growDays>10</growDays>
 			<sowTags>
 				<li>Ground</li>
+				<li>BMT_Fungiponics</li>
 			</sowTags>
 			<sowResearchPrerequisites>
 				<li>BMT_ResearchMushrooms</li>
 			</sowResearchPrerequisites>
 			<sowMinSkill>7</sowMinSkill>	  
 			<wildOrder>0</wildOrder>
+		  <purpose>Food</purpose>
+		  <humanFoodPlant>true</humanFoodPlant>			
 		</plant>
 		<comps>
 			<li Class="CompProperties_Glower">
@@ -87,6 +91,7 @@
 		<maxFertility>999.0</maxFertility>
 		<minLight>0.0</minLight>
 		<maxLight>0.6</maxLight>
+		<MyceliumAbundance>1</MyceliumAbundance>
 		<MyceliumSizeRange>
 			<min>4</min>
 			<max>7</max>
@@ -131,14 +136,17 @@
 			<harvestedThingDef>BMT_RawGlowbulb</harvestedThingDef>
 			<harvestYield>10</harvestYield>
 			<visualSizeRange>0.6~0.8</visualSizeRange>
-			<growDays>7</growDays>
+			<growDays>14</growDays>
 			<sowTags>
 				<li>Ground</li>				
+				<li>BMT_Fungiponics</li>
 			</sowTags>
 			<sowResearchPrerequisites>
 				<li>BMT_ResearchMushrooms</li>
 			</sowResearchPrerequisites>	  
 			<wildOrder>0</wildOrder>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>			
 		</plant>
 		<comps>
 			<li Class="CompProperties_Glower">
@@ -157,6 +165,7 @@
 		<maxFertility>999.0</maxFertility>
 		<minLight>0.0</minLight>
 		<maxLight>0.6</maxLight>
+		<MyceliumAbundance>3</MyceliumAbundance>		
 		<MyceliumSizeRange>
 			<min>1</min>
 			<max>3</max>
@@ -201,10 +210,13 @@
 			<harvestedThingDef>BMT_RawGreyfields</harvestedThingDef>
 			<harvestYield>8</harvestYield>		
 			<visualSizeRange>0.6~0.8</visualSizeRange>
-			<growDays>7</growDays>
+			<growDays>14</growDays>
 			<wildOrder>1</wildOrder>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>			
 			<sowTags>
-				<li>Ground</li>				
+				<li>Ground</li>	
+				<li>BMT_Fungiponics</li>				
 			</sowTags>
 			<sowResearchPrerequisites>
 				<li>BMT_ResearchMushrooms</li>
@@ -227,6 +239,7 @@
 		<maxFertility>999.0</maxFertility>
 		<minLight>0.0</minLight>
 		<maxLight>0.6</maxLight>
+		<MyceliumAbundance>2</MyceliumAbundance>		
 		<MyceliumSizeRange>
 			<min>2</min>
 			<max>6</max>
@@ -272,13 +285,16 @@
 			<harvestedThingDef>RawFungus</harvestedThingDef>
 			<harvestYield>23</harvestYield>		
 			<visualSizeRange>0.6~0.8</visualSizeRange>
-			<growDays>15</growDays>
+			<growDays>30</growDays>
 			<sowTags>
-				<li>Ground</li>				
+				<li>Ground</li>	
+				<li>BMT_Fungiponics</li>				
 			</sowTags>
 			<sowResearchPrerequisites>
 				<li>BMT_ResearchMushrooms</li>
-			</sowResearchPrerequisites>			
+			</sowResearchPrerequisites>	
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>			
 		</plant>
 		<comps>
 			<li Class="CompProperties_Glower">
@@ -297,6 +313,7 @@
 		<maxFertility>999.0</maxFertility>
 		<minLight>0.0</minLight>
 		<maxLight>0.6</maxLight>
+		<MyceliumAbundance>2</MyceliumAbundance>		
 		<MyceliumSizeRange>
 			<min>1</min>
 			<max>5</max>
@@ -341,12 +358,13 @@
 			<harvestMinGrowth>0.90</harvestMinGrowth>
 			<harvestWork>100</harvestWork>
 			<harvestTag>Standard</harvestTag>
-			<harvestedThingDef>MedicineHerbal</harvestedThingDef>
-			<harvestYield>2</harvestYield>
+			<harvestedThingDef>BMT_GleamcapSalve</harvestedThingDef>
+			<harvestYield>1</harvestYield>
 			<visualSizeRange>0.3~1.2</visualSizeRange>
-			<growDays>12</growDays>
+			<growDays>24</growDays>
 			<sowTags>
-				<li>Ground</li>				
+				<li>Ground</li>
+				<li>BMT_Fungiponics</li>				
 			</sowTags>
 			<sowResearchPrerequisites>
 				<li>BMT_ResearchMushrooms</li>
@@ -371,6 +389,7 @@
 		<maxFertility>999.0</maxFertility>
 		<minLight>0.0</minLight>
 		<maxLight>0.6</maxLight>
+		<MyceliumAbundance>1</MyceliumAbundance>		
 		<MyceliumSizeRange>
 			<min>3</min>
 			<max>4</max>
@@ -414,9 +433,10 @@
 			<harvestWork>100</harvestWork>
 			<harvestTag>Standard</harvestTag>
 			<visualSizeRange>0.3~1.05</visualSizeRange>
-			<growDays>1</growDays>
+			<growDays>4</growDays>
 			<sowTags>
-				<li>Ground</li>				
+				<li>Ground</li>	
+				<li>Decorative</li>			
 			</sowTags>
 			<sowResearchPrerequisites>
 				<li>BMT_ResearchMushrooms</li>
@@ -440,6 +460,7 @@
 		<maxFertility>999.0</maxFertility>
 		<minLight>0.0</minLight>
 		<maxLight>0.6</maxLight>
+		<MyceliumAbundance>3</MyceliumAbundance>		
 		<MyceliumSizeRange>
 			<min>1</min>
 			<max>1</max>

@@ -55,7 +55,7 @@ namespace Caveworld_Flora_Unleashed
 
         public void TrySpawnNewMyceliumAtRandomPosition()
 		{
-			ThingDef_FruitingBody cavePlantDef = CavePlantDefs.RandomElementByWeight((ThingDef_FruitingBody plantDef) => 1 / plantDef.MyceliumSizeRange.Average);
+			ThingDef_FruitingBody cavePlantDef = CavePlantDefs.RandomElementByWeight((ThingDef_FruitingBody plantDef) => plantDef.MyceliumAbundance / plantDef.MyceliumSizeRange.Average);
 			int newDesiredMyceliumSize = cavePlantDef.MyceliumSizeRange.RandomInRange;
 			IntVec3 spawnCell = IntVec3.Invalid;
 			GenCaveFungusReproduction.TryGetRandomMyceliumSpawnCell(cavePlantDef, newDesiredMyceliumSize, checkTemperature: true, map, out spawnCell);

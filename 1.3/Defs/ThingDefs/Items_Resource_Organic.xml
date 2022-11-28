@@ -6,7 +6,7 @@
 	
 					<!-- SHIMMERSHROOM -->
 		<!-- A rare food that tastes better raw than cooked -->
-	<ThingDef ParentName="PlantFoodRawBase">
+<ThingDef ParentName="PlantFoodRawBase">
 		<defName>BMT_RawShimmershroom</defName>
 		<label>fresh shimmershroom</label>
 		<description>Raw shimmershroom. Its delicate taste and nutritional qualities are much appreciated by caveworlds inhabitants.</description>
@@ -24,13 +24,8 @@
 			<foodType>Fungus</foodType>
 			<joy>0.008</joy>
 			<joyKind>Gluttonous</joyKind>
-			<specialThoughtDirect>BMT_AteRawShimmershroom</specialThoughtDirect>
+			<tasteThought>BMT_AteRawShimmershroom</tasteThought>
 		</ingestible>
-		<ingredient>
-		  <mergeCompatibilityTags>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
-		  </mergeCompatibilityTags>
-		</ingredient>
 		<comps>
 			<li Class="CompProperties_Rottable">
 				<daysToRotStart>10</daysToRotStart>
@@ -98,8 +93,42 @@
 		</comps>
 	</ThingDef>
 
-  <!--=============== Fungal stuff ====================-->
+	<!-- ========== OTHER FUNGAL PRODUCTS ========== -->
 
+					<!-- GLEAMCAP SALVE -->
+		<!-- Can be used as medicine -->
+	<ThingDef ParentName="ResourceBase">
+		<defName>BMT_GleamcapSalve</defName>
+		<label>gleamcap salve</label>
+		<description>A massive gleamcap, dripping with salve. Known for its natural healing properties by caveworld tenders, it can be used to treat injuries and ease the pain.</description>
+		<thingClass>Medicine</thingClass>
+		<graphicData>
+			<texPath>Things/Item/Resource/BMT_GleamcapSalve</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>10</MarketValue>
+			<Flammability>1.0</Flammability>
+			<MedicalPotency>0.60</MedicalPotency>
+			<DeteriorationRate>4</DeteriorationRate>
+			<Mass>0.6</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Medicine</li>
+		</thingCategories>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>100</daysToRotStart>
+			</li>
+		</comps>
+	</ThingDef>
+
+					<!-- MYCELIAL BLOCKS -->
+		<!-- A long life animal food -->
   <ThingDef ParentName="RoughPlantBase">
     <defName>BMT_MycelialBlocks</defName>
     <label>mycelial blocks</label>
@@ -121,6 +150,5 @@
       <optimalityOffsetFeedingAnimals>7</optimalityOffsetFeedingAnimals>
     </ingestible>
   </ThingDef>
-
 
 </Defs>

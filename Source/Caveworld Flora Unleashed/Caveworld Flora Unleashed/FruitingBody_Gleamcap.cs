@@ -8,9 +8,9 @@ namespace Caveworld_Flora_Unleashed
 {
 	public class FruitingBody_Gleamcap : FruitingBody
 	{
-		public const float poisonRadius = 4f;
+		public const float poisonRadius = 2f;
 
-		public const float minGrowthToPoison = 0.3f;
+		public const float minGrowthToPoison = 0.6f;
 
 		public int nextLongTick = 2000;
 
@@ -24,19 +24,19 @@ namespace Caveworld_Flora_Unleashed
 
 		public override void TickRare()
 		{
-			if (Growth >= 0.3f && !base.Dying && !base.IsInCryostasis)
+			if (Growth >= 0.6f && !base.Dying && !base.IsInCryostasis)
 			{
 				ThrowPoisonSmoke();
 				List<Pawn> allPawnsSpawned = base.Map.mapPawns.AllPawnsSpawned;
 				for (int pawnIndex = 0; pawnIndex < allPawnsSpawned.Count; pawnIndex++)
 				{
 					Pawn pawn = allPawnsSpawned[pawnIndex];
-					if (!pawn.Position.InHorDistOf(base.Position, 4f) || !pawn.RaceProps.IsFlesh)
+					if (!pawn.Position.InHorDistOf(base.Position, 2f) || !pawn.RaceProps.IsFlesh)
 					{
 						continue;
 					}
 					{
-						float num = 0.028758334f;
+						float num = 0.00287583f;
 						num *= pawn.GetStatValue(StatDefOf.ToxicSensitivity);
 						if (num != 0f)
 						{
@@ -49,7 +49,7 @@ namespace Caveworld_Flora_Unleashed
 			}
 			if (Find.TickManager.TicksGame >= nextLongTick)
 			{
-				nextLongTick = Find.TickManager.TicksGame + 250;
+				nextLongTick = Find.TickManager.TicksGame + 2500;
 				TickLong();
 			}
 		}

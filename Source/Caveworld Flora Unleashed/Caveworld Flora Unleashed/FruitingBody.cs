@@ -88,14 +88,13 @@ namespace Caveworld_Flora_Unleashed
         {
             get
             {
-            TerrainDef terrain = base.Position.GetTerrain(base.Map);
-            if  (terrain.defName.Contains("FungalGravel"))
-            {
-                return true;
+                Building edifice = base.Position.GetEdifice(base.Map);
+                TerrainDef terrain = base.Position.GetTerrain(base.Map);
+                if (terrain.defName.Contains("Fungal") || edifice != null && (edifice.def == Util_Caveworld_Flora_Unleashed.fungiponicsBasinDef || edifice.def == ThingDef.Named("PlantPot")))
+                    return true;
+                return false;
             }
-            return false;
         }
-    }
 
         public bool IsCellNearNaturalRockBlock
         {

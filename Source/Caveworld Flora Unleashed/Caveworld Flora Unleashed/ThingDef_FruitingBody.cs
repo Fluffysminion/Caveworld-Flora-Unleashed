@@ -28,6 +28,8 @@ namespace Caveworld_Flora_Unleashed
 
         public float maxLight = 1f;
 
+        public float MyceliumAbundance = 1f;
+
         public IntRange MyceliumSizeRange;
 
         public float MyceliumSpawnRadius = 1f;

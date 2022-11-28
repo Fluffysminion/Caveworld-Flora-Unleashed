@@ -8,9 +8,10 @@
 		<label>gleamcap smoke</label>
 		<description>gleamcap smoke</description>
 		<comps>
-			<li Class="HediffCompProperties_Immunizable">
-				<severityPerDayNotImmune>-0.08</severityPerDayNotImmune>
-			</li>
+		  <li Class="HediffCompProperties_SeverityPerDay">
+			<severityPerDay>-1</severityPerDay>
+			<showHoursToRecover>true</showHoursToRecover>
+		  </li>
 		</comps>
 		<stages>
 			<li>
