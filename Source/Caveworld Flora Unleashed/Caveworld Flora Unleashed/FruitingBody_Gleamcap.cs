@@ -36,8 +36,12 @@ namespace Caveworld_Flora_Unleashed
 						continue;
 					}
 					{
-						float num = 0.00287583f;
-						num *= pawn.GetStatValue(StatDefOf.ToxicSensitivity);
+						float num = 0.00287583f; 
+						num *= Mathf.Max(1f - pawn.GetStatValue(StatDefOf.ToxicResistance, true, -1), 0f);
+						if (ModsConfig.BiotechActive)
+						{
+							num *= Mathf.Max(1f - pawn.GetStatValue(StatDefOf.ToxicEnvironmentResistance, true, -1), 0f);
+						}
 						if (num != 0f)
 						{
 							float num2 = Mathf.Lerp(0.85f, 1.15f, Rand.ValueSeeded(pawn.thingIDNumber ^ 0x46EDC5D));
