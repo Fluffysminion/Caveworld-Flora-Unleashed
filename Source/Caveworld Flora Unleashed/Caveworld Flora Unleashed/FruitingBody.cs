@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Collections.Generic;
+using System.Text;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -58,7 +59,7 @@ namespace Caveworld_Flora_Unleashed
         {
             get
             {
-                float light = base.Map.glowGrid.GameGlowAt(base.Position);
+                float light = base.Map.glowGrid.GroundGlowAt(base.Position, ignoreCavePlants: true, ignoreSky: false);
                 if (light >= FruitingBodyProps.minLight && light <= FruitingBodyProps.maxLight)
                 {
                     return 1f;
@@ -69,7 +70,32 @@ namespace Caveworld_Flora_Unleashed
 
         public bool IsLightConditionOk => LightGrowthRateFactor > 0f;
 
-        public new float GrowthRate => FertilityGrowthRateFactor * TemperatureGrowthRateFactor * LightGrowthRateFactor;
+        public override float GrowthRate => FertilityGrowthRateFactor * TemperatureGrowthRateFactor * LightGrowthRateFactor;
+
+        public override string GrowthRateCalcDesc
+        {
+            get
+            {
+                StringBuilder stringBuilder = new StringBuilder();
+                if (GrowthRateFactor_Fertility != 1f)
+                {
+                    stringBuilder.AppendInNewLine("StatsReport_MultiplierFor".Translate("FertilityLower".Translate()) + ": " + FertilityGrowthRateFactor.ToStringPercent());
+                }
+                if (GrowthRateFactor_Temperature != 1f)
+                {
+                    stringBuilder.AppendInNewLine("StatsReport_MultiplierFor".Translate("TemperatureLower".Translate()) + ": " + TemperatureGrowthRateFactor.ToStringPercent());
+                }
+                if (GrowthRateFactor_Light != 1f)
+                {
+                    stringBuilder.AppendInNewLine("StatsReport_MultiplierFor".Translate("LightLower".Translate()) + ": " + LightGrowthRateFactor.ToStringPercent());
+                }
+                if (ModsConfig.BiotechActive && base.Map.gameConditionManager.ConditionIsActive(GameConditionDefOf.NoxiousHaze) && GrowthRateFactor_NoxiousHaze != 1f)
+                {
+                    stringBuilder.AppendInNewLine("StatsReport_MultiplierFor".Translate(GameConditionDefOf.NoxiousHaze.label) + ": " + GrowthRateFactor_NoxiousHaze.ToStringPercent());
+                }
+                return stringBuilder.ToString();
+            }
+        }
 
         public new float GrowthPerTick
         {
@@ -152,11 +178,12 @@ namespace Caveworld_Flora_Unleashed
                 {
                     StringBuilder stringBuilder = new StringBuilder();
                     stringBuilder.Append(def.LabelCap);
+                    stringBuilder.Append(" (" + "PercentGrowth".Translate(GrowthPercentString));
                     if (IsInCryostasis)
                     {
                         stringBuilder.Append(", " + "Caveworld_Flora_Unleashed.Cryostasis".Translate());
                     }
-                    if (Dying)
+                    else if (Dying)
                     {
                         stringBuilder.Append(", " + "DyingLower".Translate());
                     }
@@ -186,7 +213,7 @@ namespace Caveworld_Flora_Unleashed
                 growthInt += GrowthPerTick * 2000f;
                 if (!plantWasAlreadyMature && LifeStage == PlantLifeStage.Mature)
                 {
-                    base.Map.mapDrawer.MapMeshDirty(base.Position, MapMeshFlag.Things);
+                    base.Map.mapDrawer.MapMeshDirty(base.Position, MapMeshFlagDefOf.Things);
                 }
             }
             if (!IsInCryostasis)
@@ -206,30 +233,60 @@ namespace Caveworld_Flora_Unleashed
         public override string GetInspectString()
         {
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.Append(Translator.Translate("PercentGrowth", base.GrowthPercentString));
-            if (LifeStage == PlantLifeStage.Mature)
+            if (def.plant.showGrowthInInspectPane)
             {
-                if (def.plant.Harvestable)
+                if (LifeStage == PlantLifeStage.Growing)
                 {
-                    stringBuilder.AppendLine();
-                    stringBuilder.Append("ReadyToHarvest".Translate());
+                    stringBuilder.AppendLine("PercentGrowth".Translate(base.GrowthPercentString));
+                    stringBuilder.AppendLine("GrowthRate".Translate() + ": " + GrowthRate.ToStringPercent());
                 }
-                else
+                else if (LifeStage == PlantLifeStage.Mature)
                 {
-                    stringBuilder.AppendLine();
-                    stringBuilder.Append("Mature".Translate());
+                    if (HarvestableNow)
+                    {
+                        stringBuilder.AppendLine("ReadyToHarvest".Translate());
+                    }
+                    else
+                    {
+                        stringBuilder.AppendLine("Mature".Translate());
+                    }
                 }
-            }
-            else if (LifeStage == PlantLifeStage.Growing)
-            {
-                if (IsInCryostasis)
+                if (!Blighted)
                 {
-                    stringBuilder.AppendLine();
-                    stringBuilder.Append("Caveworld_Flora_Unleashed.InCryostasis".Translate());
+                    if (!IsLightConditionOk && !Dying)
+                    {
+                        float light = base.Map.glowGrid.GroundGlowAt(base.Position, ignoreCavePlants: true, ignoreSky: false);
+                        if (light < FruitingBodyProps.minLight)
+                        {
+                            stringBuilder.Append(", " + "Caveworld_Flora_Unleashed.TooDark".Translate());
+                        }
+                        else if (light > FruitingBodyProps.maxLight)
+                        {
+                            stringBuilder.Append(", " + "Caveworld_Flora_Unleashed.Overlit".Translate());
+                        }
+                    }
+                    if (Resting)
+                    {
+                        stringBuilder.AppendLine("PlantResting".Translate());
+                    }
+                    if (IsInCryostasis)
+                    {
+                        stringBuilder.AppendLine("Caveworld_Flora_Unleashed.InCryostasis".Translate());
+                    }
+                    else if (TemperatureGrowthRateFactor < 0.99f && !Dying)
+                    {
+                        if (Mathf.Approximately(TemperatureGrowthRateFactor, 0f) || !PlantUtility.GrowthSeasonNow(base.Position, base.Map))
+                        {
+                            stringBuilder.AppendLine("OutOfIdealTemperatureRangeNotGrowing".Translate());
+                        }
+                        else
+                        {
+                            stringBuilder.AppendLine("OutOfIdealTemperatureRange".Translate(Mathf.Max(1, Mathf.RoundToInt(TemperatureGrowthRateFactor * 100f)).ToString()));
+                        }
+                    }
                 }
-                else if (Dying)
+                if (Dying)
                 {
-                    stringBuilder.AppendLine();
                     stringBuilder.Append("Caveworld_Flora_Unleashed.Dying".Translate());
                     if (base.Position.GetTemperature(base.Map) > (float)FruitingBodyProps.maxGrowTemperature)
                     {
@@ -237,7 +294,7 @@ namespace Caveworld_Flora_Unleashed
                     }
                     if (!IsLightConditionOk)
                     {
-                        float light = base.Map.glowGrid.GameGlowAt(base.Position);
+                        float light = base.Map.glowGrid.GroundGlowAt(base.Position, ignoreCavePlants: true, ignoreSky: false);
                         if (light < FruitingBodyProps.minLight)
                         {
                             stringBuilder.Append(", " + "Caveworld_Flora_Unleashed.TooDark".Translate());
@@ -263,9 +320,19 @@ namespace Caveworld_Flora_Unleashed
                     {
                         stringBuilder.Append(", " + "Caveworld_Flora_Unleashed.MyceliumRootRemoved".Translate());
                     }
+                    stringBuilder.AppendLineIfNotEmpty();
+                }
+                if (Blighted)
+                {
+                    stringBuilder.AppendLine("Blighted".Translate() + " (" + Blight.Severity.ToStringPercent() + ")");
                 }
             }
-            return stringBuilder.ToString();
+            string text = InspectStringPartsFromComps();
+            if (!text.NullOrEmpty())
+            {
+                stringBuilder.Append(text);
+            }
+            return stringBuilder.ToString().TrimEndNewlines();
         }
 
 
@@ -277,7 +344,7 @@ namespace Caveworld_Flora_Unleashed
 
         public static bool IsLightConditionOkAt(ThingDef_FruitingBody plantDef, Map map, IntVec3 position)
         {
-            float light = map.glowGrid.GameGlowAt(position);
+            float light = map.glowGrid.GroundGlowAt(position, ignoreCavePlants: true, ignoreSky: false);
             if (light >= plantDef.minLight && light <= plantDef.maxLight)
             {
                 return true;
@@ -332,5 +399,6 @@ namespace Caveworld_Flora_Unleashed
             }
             return false;
         }
+
     }
 }

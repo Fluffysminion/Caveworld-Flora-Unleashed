@@ -219,16 +219,16 @@ using Verse;
 			return thing;
 		}
 
-		public override void Draw()
+		protected override void DrawAt(Vector3 drawLoc, bool flip = false)
 		{
-			base.Draw();
+			base.DrawAt(drawLoc, flip);
 			if (!Empty)
 			{
-				Vector3 drawPos = DrawPos;
-				drawPos.y += 3f / 64f;
-				drawPos.z += 0.25f;
+				Vector3 center = DrawPos;
+				center.y += 3f / 64f;
+				center.z += 0.25f;
 				GenDraw.FillableBarRequest r = default(GenDraw.FillableBarRequest);
-				r.center = drawPos;
+				r.center = center;
 				r.size = BarSize;
 				r.fillPercent = (float)wortCount / 25f;
 				r.filledMat = BarFilledMat;

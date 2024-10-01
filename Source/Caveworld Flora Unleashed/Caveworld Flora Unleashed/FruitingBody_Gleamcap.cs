@@ -27,7 +27,7 @@ namespace Caveworld_Flora_Unleashed
 			if (Growth >= 0.6f && !base.Dying && !base.IsInCryostasis)
 			{
 				ThrowPoisonSmoke();
-				List<Pawn> allPawnsSpawned = base.Map.mapPawns.AllPawnsSpawned;
+				IReadOnlyList<Pawn> allPawnsSpawned = base.Map.mapPawns.AllPawnsSpawned;
 				for (int pawnIndex = 0; pawnIndex < allPawnsSpawned.Count; pawnIndex++)
 				{
 					Pawn pawn = allPawnsSpawned[pawnIndex];
