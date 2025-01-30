@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
+using UnityEngine;
 using Verse;
+using static Caveworld_Flora_Unleashed.Settings;
 
 namespace Caveworld_Flora_Unleashed
 {
@@ -43,8 +45,8 @@ namespace Caveworld_Flora_Unleashed
 		{
 			if (randomSpawnPeriodInTicks == 0)
 			{
-				int mapSurfaceCoefficient = map.Size.x * 2 + map.Size.z * 2;
-				randomSpawnPeriodInTicks = 160000 / (mapSurfaceCoefficient / 100);
+				float mapSurfaceCoefficient = map.Size.x * 2 + map.Size.z * 2;
+				randomSpawnPeriodInTicks = (int)(160000f / (mapSurfaceCoefficient / 100f) * 10f / spawnRate);
 			}
 			if (Find.TickManager.TicksGame > nextRandomSpawnTick)
 			{

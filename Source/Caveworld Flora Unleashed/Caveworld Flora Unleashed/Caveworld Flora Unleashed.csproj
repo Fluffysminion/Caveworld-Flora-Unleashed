@@ -64,10 +64,12 @@
     <Compile Include="Building_MushroomWineFermentingBarrel.cs" />
     <Compile Include="Building_FungiponicsBasin.cs" />
     <Compile Include="FruitingBody_Gleamcap.cs" />
+    <Compile Include="Main.cs" />
     <Compile Include="MapComponent_CaveFungus.cs" />
-    <Compile Include="Util_Caveworld_Flora_Unleashed.cs" />
+    <Compile Include="Caveworld_Flora_Unleashed_DefOf.cs" />
     <Compile Include="JobDriver_FillMushroomWineFermentingBarrel.cs" />
     <Compile Include="JobDriver_TakeMushroomWineOutOfFermentingBarrel.cs" />
+    <Compile Include="Settings.cs" />
     <Compile Include="WorkGiver_FillMushroomWineFermentingBarrel.cs" />
     <Compile Include="WorkGiver_TakeMushroomWineOutOfFermentingBarrel.cs" />
     <Compile Include="Mycelium.cs" />

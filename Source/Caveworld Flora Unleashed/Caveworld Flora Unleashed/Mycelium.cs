@@ -1,6 +1,7 @@
 ﻿using System.Text;
 using RimWorld;
 using Verse;
+using static Caveworld_Flora_Unleashed.Settings;
 
 namespace Caveworld_Flora_Unleashed
 {
@@ -12,9 +13,9 @@ namespace Caveworld_Flora_Unleashed
 
 		public int desiredSize = 0;
 
-		public int nextGrownTick = 0;
+		public int nextGrowthTick = 0;
 
-		public int nextReproductionTick = 0;
+		//public int nextReproductionTick = 0;
 
 		public float ExclusivityRadius => plantDef.MyceliumExclusivityRadiusOffset + (float)desiredSize * plantDef.MyceliumExclusivityRadiusFactor;
 
@@ -24,7 +25,7 @@ namespace Caveworld_Flora_Unleashed
 		{
 			FruitingBody newPlant = ThingMaker.MakeThing(plantDef) as FruitingBody;
 			GenSpawn.Spawn(newPlant, spawnCell, map);
-			Mycelium newMycelium = ThingMaker.MakeThing(Util_Caveworld_Flora_Unleashed.MyceliumDef) as Mycelium;
+			Mycelium newMycelium = ThingMaker.MakeThing(Caveworld_Flora_Unleashed_DefOf.BMT_Mycelium) as Mycelium;
 			newMycelium.Initialize(plantDef, desiredSize);
 			GenSpawn.Spawn(newMycelium, spawnCell, map);
 			newPlant.Mycelium = newMycelium;
@@ -52,22 +53,24 @@ namespace Caveworld_Flora_Unleashed
 
 		public override void TickLong()
 		{
-			if (Find.TickManager.TicksGame > nextGrownTick && FruitingBody.IsTemperatureConditionOkAt(plantDef, base.Map, base.Position) && FruitingBody.IsLightConditionOkAt(plantDef, base.Map, base.Position))
+			if (Find.TickManager.TicksGame > nextGrowthTick && FruitingBody.IsTemperatureConditionOkAt(plantDef, base.Map, base.Position) && FruitingBody.IsLightConditionOkAt(plantDef, base.Map, base.Position))
 			{
-				nextGrownTick = Find.TickManager.TicksGame + (int)(plantDef.plant.lifespanDaysPerGrowDays * 60000f);
-				_ = GenCaveFungusReproduction.TryGrowMycelium(this);
-			}
-			if (actualSize == desiredSize && Find.TickManager.TicksGame > nextReproductionTick && FruitingBody.IsTemperatureConditionOkAt(plantDef, base.Map, base.Position) && FruitingBody.IsLightConditionOkAt(plantDef, base.Map, base.Position))
-			{
-				GenCaveFungusReproduction.TrySpawnNewMyceliumAwayFrom(this);
-				nextReproductionTick = Find.TickManager.TicksGame + (int)(plantDef.plant.lifespanDaysPerGrowDays * 10f * 60000f);
+				if (actualSize >= desiredSize)
+				{
+                    GenCaveFungusReproduction.TrySpawnNewMyceliumAwayFrom(this);
+                }
+				else
+				{
+                    GenCaveFungusReproduction.TryGrowMycelium(this);
+                }
+				nextGrowthTick = Find.TickManager.TicksGame + (int)(plantDef.plant.lifespanDaysPerGrowDays * 60000f * 10f / spawnRate);
 			}
 		}
 
 		public override void ExposeData()
 		{
 			base.ExposeData();
-			string plantDefAsString = "";
+			/*
 			if (Scribe.mode == LoadSaveMode.Saving)
 			{
 				plantDefAsString = plantDef.defName;
@@ -78,10 +81,17 @@ namespace Caveworld_Flora_Unleashed
 				Scribe_Values.Look(ref plantDefAsString, "plantDefAsString");
 				plantDef = ThingDef.Named(plantDefAsString) as ThingDef_FruitingBody;
 			}
+			*/
+			Scribe_Defs.Look(ref plantDef, "plantDef");
+			if (plantDef == null && Scribe.mode == LoadSaveMode.LoadingVars)        //compat with old saves
+            {
+                string plantDefAsString = "";
+                Scribe_Values.Look(ref plantDefAsString, "plantDefAsString");
+                plantDef = ThingDef.Named(plantDefAsString) as ThingDef_FruitingBody;
+            }
 			Scribe_Values.Look(ref actualSize, "actualSize", 0);
 			Scribe_Values.Look(ref desiredSize, "desiredSize", 0);
-			Scribe_Values.Look(ref nextReproductionTick, "nextGrownTick", 0);
-			Scribe_Values.Look(ref nextReproductionTick, "nextReproductionTick", 0);
+			Scribe_Values.Look(ref nextGrowthTick, "nextGrownTick", 0);
 		}
 
 		public void NotifyPlantAdded()

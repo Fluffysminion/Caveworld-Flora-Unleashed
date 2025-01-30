@@ -116,7 +116,7 @@ namespace Caveworld_Flora_Unleashed
             {
                 Building edifice = base.Position.GetEdifice(base.Map);
                 TerrainDef terrain = base.Position.GetTerrain(base.Map);
-                if (terrain.defName.Contains("Fungal") || edifice != null && (edifice.def == Util_Caveworld_Flora_Unleashed.fungiponicsBasinDef || edifice.def == ThingDef.Named("PlantPot")))
+                if (terrain.defName.Contains("Fungal") || edifice != null && (edifice.def == Caveworld_Flora_Unleashed_DefOf.BMT_FungiponicsBasin || edifice.def == ThingDef.Named("PlantPot")))
                     return true;
                 return false;
             }
@@ -400,5 +400,10 @@ namespace Caveworld_Flora_Unleashed
             return false;
         }
 
+        public override void DeSpawn(DestroyMode mode = DestroyMode.Vanish)
+        {
+            Mycelium.NotifyPlantRemoved();
+            base.DeSpawn(mode);
+        }
     }
 }

@@ -120,7 +120,7 @@ namespace Caveworld_Flora_Unleashed
 		public static bool IsMyceliumAreaClear(ThingDef_FruitingBody plantDef, int newDesiredMyceliumSize, Map map, IntVec3 position)
 		{
 			float newMyceliumExclusivityRadius = Mycelium.GetExclusivityRadius(plantDef, newDesiredMyceliumSize);
-			foreach (Thing thing in map.listerThings.ThingsOfDef(Util_Caveworld_Flora_Unleashed.MyceliumDef))
+			foreach (Thing thing in map.listerThings.ThingsOfDef(Caveworld_Flora_Unleashed_DefOf.BMT_Mycelium))
 			{
 				Mycelium Mycelium = thing as Mycelium;
 				if (Mycelium.plantDef != plantDef || !Mycelium.Position.InHorDistOf(position, Mycelium.ExclusivityRadius + newMyceliumExclusivityRadius))

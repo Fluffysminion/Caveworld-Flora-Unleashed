@@ -36,7 +36,7 @@ namespace Caveworld_Flora_Unleashed
 						continue;
 					}
 					{
-						float num = 0.00287583f; 
+						float num = 0.02f; 
 						num *= Mathf.Max(1f - pawn.GetStatValue(StatDefOf.ToxicResistance, true, -1), 0f);
 						if (ModsConfig.BiotechActive)
 						{
@@ -46,7 +46,7 @@ namespace Caveworld_Flora_Unleashed
 						{
 							float num2 = Mathf.Lerp(0.85f, 1.15f, Rand.ValueSeeded(pawn.thingIDNumber ^ 0x46EDC5D));
 							num *= num2;
-							HealthUtility.AdjustSeverity(pawn, Util_Caveworld_Flora_Unleashed.gleamcapSmokeDef, num);
+							HealthUtility.AdjustSeverity(pawn, Caveworld_Flora_Unleashed_DefOf.BMT_HediffGleamcapSmoke, num);
 						}
 					}
 				}
@@ -63,7 +63,7 @@ namespace Caveworld_Flora_Unleashed
 			Vector3 spawnPosition = base.Position.ToVector3Shifted() + Vector3Utility.RandomHorizontalOffset(3f);
 			if (spawnPosition.ShouldSpawnMotesAt(base.Map) && !base.Map.moteCounter.SaturatedLowPriority)
 			{
-				MoteThrown moteThrown = ThingMaker.MakeThing(Util_Caveworld_Flora_Unleashed.MoteGleamcapSmokeDef) as MoteThrown;
+				MoteThrown moteThrown = ThingMaker.MakeThing(Caveworld_Flora_Unleashed_DefOf.Mote_GleamcapSmoke) as MoteThrown;
 				moteThrown.Scale = 3f * Growth;
 				moteThrown.rotationRate = Rand.Range(-4, 4);
 				moteThrown.exactPosition = spawnPosition;

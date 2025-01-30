@@ -12,9 +12,10 @@
       <MaxHitPoints>150</MaxHitPoints>
       <Beauty>5</Beauty>
       <Flammability>0.8</Flammability>
-    </statBases>
+    </statBases> 
     <tickerType>Long</tickerType>
-    <neverMultiSelect>True</neverMultiSelect>
+    <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
     <drawerType>MapMeshOnly</drawerType>
     <pathCost>10</pathCost>
     <graphicData>
@@ -24,7 +25,7 @@
 	  <drawOffset>(0,-2,-2)</drawOffset>
 	  <drawSize>(2,2)</drawSize> 
     </graphicData>
-    <hideAtSnowDepth>0.2</hideAtSnowDepth>
+    <hideAtSnowDepth>0.1</hideAtSnowDepth>
     <plant>
       <soundHarvesting>Harvest_Standard</soundHarvesting>
       <soundHarvestFinish>Harvest_Standard_Finish</soundHarvestFinish>
