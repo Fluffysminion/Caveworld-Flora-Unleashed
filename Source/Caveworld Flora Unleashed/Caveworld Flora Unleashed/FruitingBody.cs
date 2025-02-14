@@ -402,7 +402,7 @@ namespace Caveworld_Flora_Unleashed
 
         public override void DeSpawn(DestroyMode mode = DestroyMode.Vanish)
         {
-            Mycelium.NotifyPlantRemoved();
+            Mycelium?.NotifyPlantRemoved();
             base.DeSpawn(mode);
         }
     }
