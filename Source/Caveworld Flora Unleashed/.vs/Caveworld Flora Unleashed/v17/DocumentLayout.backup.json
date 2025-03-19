@@ -3,18 +3,39 @@
   "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Caveworld-Flora-Unleashed\\Source\\Caveworld Flora Unleashed\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{233696C0-C4FE-405F-B11E-58135B150D6C}|Caveworld Flora Unleashed\\Caveworld Flora Unleashed.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\caveworld-flora-unleashed\\source\\caveworld flora unleashed\\caveworld flora unleashed\\fruitingbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{233696C0-C4FE-405F-B11E-58135B150D6C}|Caveworld Flora Unleashed\\Caveworld Flora Unleashed.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\caveworld-flora-unleashed\\source\\caveworld flora unleashed\\caveworld flora unleashed\\mycelium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{233696C0-C4FE-405F-B11E-58135B150D6C}|Caveworld Flora Unleashed\\Caveworld Flora Unleashed.csproj|solutionrelative:caveworld flora unleashed\\mycelium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{233696C0-C4FE-405F-B11E-58135B150D6C}|Caveworld Flora Unleashed\\Caveworld Flora Unleashed.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Caveworld-Flora-Unleashed\\Source\\Caveworld Flora Unleashed\\caveworld flora unleashed\\fruitingbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{233696C0-C4FE-405F-B11E-58135B150D6C}|Caveworld Flora Unleashed\\Caveworld Flora Unleashed.csproj|solutionrelative:caveworld flora unleashed\\fruitingbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{233696C0-C4FE-405F-B11E-58135B150D6C}|Caveworld Flora Unleashed\\Caveworld Flora Unleashed.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\caveworld-flora-unleashed\\source\\caveworld flora unleashed\\caveworld flora unleashed\\building_fungiponicsbasin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{233696C0-C4FE-405F-B11E-58135B150D6C}|Caveworld Flora Unleashed\\Caveworld Flora Unleashed.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\caveworld-flora-unleashed\\source\\caveworld flora unleashed\\caveworld flora unleashed\\thingdef_fruitingbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{233696C0-C4FE-405F-B11E-58135B150D6C}|Caveworld Flora Unleashed\\Caveworld Flora Unleashed.csproj|solutionrelative:caveworld flora unleashed\\thingdef_fruitingbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{233696C0-C4FE-405F-B11E-58135B150D6C}|Caveworld Flora Unleashed\\Caveworld Flora Unleashed.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Caveworld-Flora-Unleashed\\Source\\Caveworld Flora Unleashed\\caveworld flora unleashed\\gencavefungusreproduction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{233696C0-C4FE-405F-B11E-58135B150D6C}|Caveworld Flora Unleashed\\Caveworld Flora Unleashed.csproj|solutionrelative:caveworld flora unleashed\\gencavefungusreproduction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{233696C0-C4FE-405F-B11E-58135B150D6C}|Caveworld Flora Unleashed\\Caveworld Flora Unleashed.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Caveworld-Flora-Unleashed\\Source\\Caveworld Flora Unleashed\\caveworld flora unleashed\\mapcomponent_cavefungus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{233696C0-C4FE-405F-B11E-58135B150D6C}|Caveworld Flora Unleashed\\Caveworld Flora Unleashed.csproj|solutionrelative:caveworld flora unleashed\\mapcomponent_cavefungus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{233696C0-C4FE-405F-B11E-58135B150D6C}|Caveworld Flora Unleashed\\Caveworld Flora Unleashed.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\caveworld-flora-unleashed\\source\\caveworld flora unleashed\\caveworld flora unleashed\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{233696C0-C4FE-405F-B11E-58135B150D6C}|Caveworld Flora Unleashed\\Caveworld Flora Unleashed.csproj|solutionrelative:caveworld flora unleashed\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{233696C0-C4FE-405F-B11E-58135B150D6C}|Caveworld Flora Unleashed\\Caveworld Flora Unleashed.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Caveworld-Flora-Unleashed\\Source\\Caveworld Flora Unleashed\\caveworld flora unleashed\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{233696C0-C4FE-405F-B11E-58135B150D6C}|Caveworld Flora Unleashed\\Caveworld Flora Unleashed.csproj|solutionrelative:caveworld flora unleashed\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{233696C0-C4FE-405F-B11E-58135B150D6C}|Caveworld Flora Unleashed\\Caveworld Flora Unleashed.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Caveworld-Flora-Unleashed\\Source\\Caveworld Flora Unleashed\\caveworld flora unleashed\\building_fungiponicsbasin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{233696C0-C4FE-405F-B11E-58135B150D6C}|Caveworld Flora Unleashed\\Caveworld Flora Unleashed.csproj|solutionrelative:caveworld flora unleashed\\building_fungiponicsbasin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Caveworld Flora Unleashed||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{233696C0-C4FE-405F-B11E-58135B150D6C}|Caveworld Flora Unleashed\\Caveworld Flora Unleashed.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\caveworld-flora-unleashed\\source\\caveworld flora unleashed\\caveworld flora unleashed\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|6185191f-1008-4fb2-a715-3a4e4f27e610"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,7 +45,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 360,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -36,20 +57,97 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ThingDef_FruitingBody.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Caveworld-Flora-Unleashed\\Source\\Caveworld Flora Unleashed\\Caveworld Flora Unleashed\\ThingDef_FruitingBody.cs",
+              "RelativeDocumentMoniker": "Caveworld Flora Unleashed\\ThingDef_FruitingBody.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Caveworld-Flora-Unleashed\\Source\\Caveworld Flora Unleashed\\Caveworld Flora Unleashed\\ThingDef_FruitingBody.cs",
+              "RelativeToolTip": "Caveworld Flora Unleashed\\ThingDef_FruitingBody.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T15:57:25.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Mycelium.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Caveworld-Flora-Unleashed\\Source\\Caveworld Flora Unleashed\\Caveworld Flora Unleashed\\Mycelium.cs",
+              "RelativeDocumentMoniker": "Caveworld Flora Unleashed\\Mycelium.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Caveworld-Flora-Unleashed\\Source\\Caveworld Flora Unleashed\\Caveworld Flora Unleashed\\Mycelium.cs",
+              "RelativeToolTip": "Caveworld Flora Unleashed\\Mycelium.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAgwHUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T15:36:21.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Settings.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Caveworld-Flora-Unleashed\\Source\\Caveworld Flora Unleashed\\Caveworld Flora Unleashed\\Settings.cs",
+              "RelativeDocumentMoniker": "Caveworld Flora Unleashed\\Settings.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Caveworld-Flora-Unleashed\\Source\\Caveworld Flora Unleashed\\Caveworld Flora Unleashed\\Settings.cs",
+              "RelativeToolTip": "Caveworld Flora Unleashed\\Settings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T18:01:34.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GenCaveFungusReproduction.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Caveworld-Flora-Unleashed\\Source\\Caveworld Flora Unleashed\\Caveworld Flora Unleashed\\GenCaveFungusReproduction.cs",
+              "RelativeDocumentMoniker": "Caveworld Flora Unleashed\\GenCaveFungusReproduction.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Caveworld-Flora-Unleashed\\Source\\Caveworld Flora Unleashed\\Caveworld Flora Unleashed\\GenCaveFungusReproduction.cs",
+              "RelativeToolTip": "Caveworld Flora Unleashed\\GenCaveFungusReproduction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T17:54:13.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MapComponent_CaveFungus.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Caveworld-Flora-Unleashed\\Source\\Caveworld Flora Unleashed\\Caveworld Flora Unleashed\\MapComponent_CaveFungus.cs",
+              "RelativeDocumentMoniker": "Caveworld Flora Unleashed\\MapComponent_CaveFungus.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Caveworld-Flora-Unleashed\\Source\\Caveworld Flora Unleashed\\Caveworld Flora Unleashed\\MapComponent_CaveFungus.cs",
+              "RelativeToolTip": "Caveworld Flora Unleashed\\MapComponent_CaveFungus.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T17:53:51.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Main.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Caveworld-Flora-Unleashed\\Source\\Caveworld Flora Unleashed\\Caveworld Flora Unleashed\\Main.cs",
+              "RelativeDocumentMoniker": "Caveworld Flora Unleashed\\Main.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Caveworld-Flora-Unleashed\\Source\\Caveworld Flora Unleashed\\Caveworld Flora Unleashed\\Main.cs",
+              "RelativeToolTip": "Caveworld Flora Unleashed\\Main.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T15:21:57.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "FruitingBody.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Caveworld-Flora-Unleashed\\Source\\Caveworld Flora Unleashed\\Caveworld Flora Unleashed\\FruitingBody.cs",
               "RelativeDocumentMoniker": "Caveworld Flora Unleashed\\FruitingBody.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Caveworld-Flora-Unleashed\\Source\\Caveworld Flora Unleashed\\Caveworld Flora Unleashed\\FruitingBody.cs",
               "RelativeToolTip": "Caveworld Flora Unleashed\\FruitingBody.cs",
-              "ViewState": "AgIAAH4BAAAAAAAAAADwv5QBAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAH8BAAAAAAAAAAAIwJYBAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T15:14:33.859Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Building_FungiponicsBasin.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Caveworld-Flora-Unleashed\\Source\\Caveworld Flora Unleashed\\Caveworld Flora Unleashed\\Building_FungiponicsBasin.cs",
               "RelativeDocumentMoniker": "Caveworld Flora Unleashed\\Building_FungiponicsBasin.cs",
@@ -57,20 +155,18 @@
               "RelativeToolTip": "Caveworld Flora Unleashed\\Building_FungiponicsBasin.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T15:13:54.722Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-13T15:13:54.722Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "Caveworld Flora Unleashed",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Caveworld-Flora-Unleashed\\Source\\Caveworld Flora Unleashed\\Caveworld Flora Unleashed\\Caveworld Flora Unleashed.csproj",
               "RelativeDocumentMoniker": "Caveworld Flora Unleashed\\Caveworld Flora Unleashed.csproj",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Caveworld-Flora-Unleashed\\Source\\Caveworld Flora Unleashed\\Caveworld Flora Unleashed\\Caveworld Flora Unleashed.csproj*",
-              "RelativeToolTip": "Caveworld Flora Unleashed\\Caveworld Flora Unleashed.csproj*",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Caveworld-Flora-Unleashed\\Source\\Caveworld Flora Unleashed\\Caveworld Flora Unleashed\\Caveworld Flora Unleashed.csproj",
+              "RelativeToolTip": "Caveworld Flora Unleashed\\Caveworld Flora Unleashed.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-13T15:13:12.267Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-13T15:13:12.267Z"
             }
           ]
         }

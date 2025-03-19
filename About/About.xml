@@ -13,6 +13,10 @@
     <li>VanillaExpanded.VCookE</li>
     <li>VanillaExpanded.VBrewE</li>
   </loadAfter>
+  <incompatibleWith>
+	<li>Mlie.CaveworldFlora</li>
+	<li>BiomesTeam.BiomesCaverns</li>
+  </incompatibleWith>
   <description>
   Nature returns to the Rim red in tooth and claw; adding a variety of lifeforms that bring both new challenges and new rewards. With a focus on survival and biological solutions to biological problems, these mods are particularly well suited to lower tech runs, but should also help make the environment more relevant in higher tech colonies as well.
   

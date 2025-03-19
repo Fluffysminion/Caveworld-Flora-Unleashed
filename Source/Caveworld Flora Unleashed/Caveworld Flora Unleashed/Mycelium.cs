@@ -53,7 +53,8 @@ namespace Caveworld_Flora_Unleashed
 
 		public override void TickLong()
 		{
-			if (Find.TickManager.TicksGame > nextGrowthTick && FruitingBody.IsTemperatureConditionOkAt(plantDef, base.Map, base.Position) && FruitingBody.IsLightConditionOkAt(plantDef, base.Map, base.Position))
+			if (Find.TickManager.TicksGame > nextGrowthTick && FruitingBody.IsTemperatureConditionOkAt(plantDef, base.Map, base.Position) 
+				&& FruitingBody.IsLightConditionOkAt(plantDef, base.Map, base.Position))
 			{
 				if (actualSize >= desiredSize)
 				{
@@ -61,7 +62,7 @@ namespace Caveworld_Flora_Unleashed
                 }
 				else
 				{
-                    GenCaveFungusReproduction.TryGrowMycelium(this);
+                    GenCaveFungusReproduction.TryGrowFruitingBody(this);
                 }
 				nextGrowthTick = Find.TickManager.TicksGame + (int)(plantDef.plant.lifespanDaysPerGrowDays * 60000f * 10f / spawnRate);
 			}
@@ -102,7 +103,7 @@ namespace Caveworld_Flora_Unleashed
 		public void NotifyPlantRemoved()
 		{
 			actualSize--;
-			if (actualSize <= 0)
+			if (actualSize < 0)
 			{
 				Destroy();
 			}
@@ -114,5 +115,6 @@ namespace Caveworld_Flora_Unleashed
 			stringBuilder.Append(plantDef.LabelCap);
 			return stringBuilder.ToString();
 		}
-	}
+        
+    }
 }

@@ -27,13 +27,17 @@ namespace Caveworld_Flora_Unleashed
 			}
 		}
 
-		public static FruitingBody TryGrowMycelium(Mycelium Mycelium, bool checkTemperature = true)
+		public static FruitingBody TryGrowFruitingBody(Mycelium Mycelium, bool checkTemperature = true)
 		{
 			if (Mycelium.actualSize >= Mycelium.desiredSize)
 			{
 				return null;
 			}
-			TryGetRandomSpawnCellNearMycelium(Mycelium, checkTemperature, out var spawnCell);
+			IntVec3 spawnCell = Mycelium.Position;
+			if (!IsValidPositionToGrowPlant(Mycelium.plantDef,Mycelium.Map,spawnCell, true))
+			{
+                TryGetRandomSpawnCellNearMycelium(Mycelium, checkTemperature, out spawnCell);
+            }			
 			if (spawnCell.IsValid)
 			{
 				FruitingBody newPlant = ThingMaker.MakeThing(Mycelium.plantDef) as FruitingBody;

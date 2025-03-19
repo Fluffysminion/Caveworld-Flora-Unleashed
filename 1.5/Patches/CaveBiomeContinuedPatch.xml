@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+<mods>
+	<li>CaveBiome (Continued)</li>
+</mods>
+<match Class="PatchOperationSequence">
+<operations>
+
+	<li Class="PatchOperationRemove">
+		<xpath>Defs/BiomeDef[defName="Cave"]/wildPlants/DevilTongue</xpath>
+	</li>
+	<li Class="PatchOperationRemove">
+		<xpath>Defs/BiomeDef[defName="Cave"]/wildPlants/StoneGrass</xpath>
+	</li>
+	<li Class="PatchOperationRemove">
+		<xpath>Defs/BiomeDef[defName="Cave"]/wildPlants/CaveVine</xpath>
+	</li>
+	<li Class="PatchOperationRemove">
+		<xpath>Defs/BiomeDef[defName="Cave"]/wildPlants/CaveLace</xpath>
+	</li>
+	
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/GenStepDef[defName="Plants"]/genStep</xpath>
+		<value>
+			<genStep Class="GenStep_Plants"/>
+		</value>
+	</li>
+
+</operations>
+</match>
+
+</Operation>
+
+</Patch>
