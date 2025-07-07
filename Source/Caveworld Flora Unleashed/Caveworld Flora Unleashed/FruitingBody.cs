@@ -275,7 +275,11 @@ namespace Caveworld_Flora_Unleashed
                     }
                     else if (TemperatureGrowthRateFactor < 0.99f && !Dying)
                     {
+#if RW_1_6
+                        if (Mathf.Approximately(TemperatureGrowthRateFactor, 0f) || !PlantUtility.GrowthSeasonNow(base.Position, base.Map,def))
+#else
                         if (Mathf.Approximately(TemperatureGrowthRateFactor, 0f) || !PlantUtility.GrowthSeasonNow(base.Position, base.Map))
+#endif
                         {
                             stringBuilder.AppendLine("OutOfIdealTemperatureRangeNotGrowing".Translate());
                         }
